@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 const inter = Inter({ subsets: ["latin"] });
 import Skills from "./components/Skills";
+import Resume from './components/Resume'
 export default function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ export default function Home() {
         </div>
         <Skills/>
         <Projects/>
+        <Resume/>
     </div>
     
   );
