@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Realtime Code Editor",
+    "frontend": {
+      "description": "Designed and developed an intuitive, responsive UI for a Realtime Code Editor. Implemented key features such as room creation and user count display, resulting in a 30% improvement in user engagement and a 20% reduction in onboarding time.",
+      "githubLink": "https://github.com/user/realtime-code-editor-frontend",
+      "liveLink": "https://example.com/realtime-code-editor"
+    },
+    "backend": {
+      "description": "Spearheaded backend development, optimizing room management and data synchronization for the Realtime Code Editor. Achieved a 40% increase in scalability and a 25% reduction in latency through seamless WebSocket communication, ultimately fostering a dynamic coding environment and a 35% enhancement in collaborative coding experiences.",
+      "githubLink": "https://github.com/user/realtime-code-editor-backend"
+    }
+  },
+  {
+    "title": "Chat GPT",
+    "frontend": {
+      "description": "Developed a user-friendly chatbot interface, optimizing communication for seamless interactions. Designed and streamlined the interface, resulting in a 25% increase in user engagement. Presented the project to faculty and peers, highlighting its functionality and technical aspects, garnering positive feedback.",
+      "githubLink": "https://github.com/user/chat-gpt-frontend",
+      "liveLink": "https://example.com/chat-gpt"
+    },
+    "backend": {
+      "description": "Engineered a robust backend architecture to efficiently handle user data and traffic for the chatbot. Scaled the backend to manage functionalities and accommodate high volumes of user interactions, ensuring a smooth user experience even under heavy loads.",
+      "githubLink": "https://github.com/user/chat-gpt-backend"
+    },
+    "integration": {
+      "description": "Integrated the frontend and backend using RESTful APIs, enabling seamless communication between the user interface and backend systems. This integration facilitated efficient data transfer and contributed to a cohesive user experience, particularly evident in scenarios with up to 1500 concurrent users, showcasing the system’s scalability and reliability."
+    }
+  },
+  {
+    "title": "Chat App",
+    "frontend": {
+      "description": "Meticulously developed frontend with a user-friendly interface. Prioritized an intuitive experience with SocketIO integration for real-time communication. Made substantial contributions to the robust and user-friendly chat app.",
+      "githubLink": "https://github.com/user/chat-app-frontend",
+      "liveLink": "https://example.com/chat-app"
+    },
+    "backend": {
+      "description": "Supported frontend functionalities with efficient server-side logic. Collaborated closely for seamless integration and flawless functionality. Thorough testing and debugging led to issue resolution, resulting in a smooth and reliable chat application experience.",
+      "githubLink": "https://github.com/user/chat-app-backend"
+    }
+  }
+]
