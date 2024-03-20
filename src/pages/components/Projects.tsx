@@ -17,36 +17,22 @@ function Projects () {
 }
 export const projects = [
   {
-    title: "Realtime Code Editor",
-    description: [
-      "Implemented intuitive, responsive UI with room creation and user count display.",
-      "Achieved 30% improvement in user engagement and 20% reduction in onboarding time.",
-      "Optimized backend for scalability and reduced latency by 40%.",
-      "Fostered dynamic coding environment and enhanced collaborative coding experiences by 35%."
-    ],
+    title: "Realtime Code Editor ",
+    description: "Implemented intuitive, responsive UI with room creation and user count display. Achieved 30% improvement in user engagement and 20% reduction in onboarding time. Optimized backend for scalability and reduced latency by 40%. Fostered dynamic coding environment and enhanced collaborative coding experiences by 35%.",
     link: "link/to/realtime-code-editor",
   },
   {
     title: "Chat GPT",
-    description: [
-      "Developed user-friendly chatbot interface, increasing engagement by 25%.",
-      "Engineered scalable backend to manage high volumes of user interactions.",
-      "Integrated frontend and backend for seamless communication.",
-      "Demonstrated scalability and reliability with up to 1500 concurrent users."
-    ],
+    description: "Developed user-friendly chatbot interface, increasing engagement by 25%. Engineered scalable backend to manage high volumes of user interactions. Integrated frontend and backend for seamless communication. Demonstrated scalability and reliability with up to 1500 concurrent users.",
     link: "link/to/chat-gpt",
   },
   {
     title: "Chat App",
-    description: [
-      "Developed intuitive frontend with SocketIO integration.",
-      "Supported frontend with efficient server-side logic.",
-      "Achieved seamless integration and flawless functionality.",
-      "Ensured smooth and reliable chat application experience through thorough testing and debugging."
-    ],
-    link: "link/to/chat-app",
+    description: "Developed intuitive frontend with SocketIO integration. Supported frontend with efficient server-side logic. Achieved seamless integration and flawless functionality. Ensured smooth and reliable chat application experience through thorough testing and debugging.",
+    link: "link/to/chat-appp",
   },
 ];
+
 
 
 
