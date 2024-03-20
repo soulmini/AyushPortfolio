@@ -9,8 +9,8 @@ const Skills = () => {
 
       <div className="flex flex-wrap justify-center gap-6">
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4">Language</h2>
-          <ul className="text-xs sm:text-sm">
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Language</h2>
+          <ul className="text-xs sm:text-sm text-white">
             <li>• C++</li>
             <li>• C</li>
             <li>• SQL</li>
@@ -20,8 +20,8 @@ const Skills = () => {
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4">Frameworks</h2>
-          <ul className="text-xs sm:text-sm">
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Frameworks</h2>
+          <ul className="text-xs sm:text-sm text-white">
             <li>• ReactJs</li>
             <li>• NextJs</li>
             <li>• Bootstrap</li>
@@ -29,16 +29,16 @@ const Skills = () => {
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4">Backend-End</h2>
-          <ul className="text-xs sm:text-sm">
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Backend-End</h2>
+          <ul className="text-xs sm:text-sm text-white">
             <li>• NodeJs</li>
             <li>• ExpressJs</li>
             <li>• REST API</li>
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4">Databases</h2>
-          <ul className="text-xs sm:text-sm">
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Databases</h2>
+          <ul className="text-xs sm:text-sm text-white">
             <li>• Prisma</li>
             <li>• MongoDB</li>
             <li>• Firebase</li>

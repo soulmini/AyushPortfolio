@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 const inter = Inter({ subsets: ["latin"] });
 import Skills from "./components/Skills";
 import Resume from './components/Resume'
+import About from "./components/About";
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
             </p>
             <p className="text-lg sm:text-4xl font-bold text-neutral-500">Full Stack Developer</p>
         </div>
+        <About/>
         <Skills/>
         <Projects/>
         <Resume/>
