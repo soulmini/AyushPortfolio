@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 import Skills from "./components/Skills";
 import Resume from './components/Resume'
 import About from "./components/About";
+import Contact from "./components/Contact";
 export default function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function Home() {
         <Skills/>
         <Projects/>
         <Resume/>
+        <Contact/>
     </div>
     
   );
