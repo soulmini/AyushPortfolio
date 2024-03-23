@@ -9,40 +9,48 @@ const Skills = () => {
 
       <div className="flex flex-wrap justify-center gap-6">
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Language</h2>
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Languages</h2>
           <ul className="text-xs sm:text-sm text-white">
             <li>• C++</li>
             <li>• C</li>
-            <li>• SQL</li>
-            <li>• JavaScript</li>
-            <li>• Python</li>
+            <li>• JavaScript (ES5/ES6)</li>
+            <li>• CSS</li>
+            <li>• JSON</li>
+            <li>• HTML</li>
             <li>• TypeScript</li>
+            <li>• SQL</li>
+            <li>• NoSQL</li>
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
           <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Frameworks</h2>
           <ul className="text-xs sm:text-sm text-white">
-            <li>• ReactJs</li>
-            <li>• NextJs</li>
-            <li>• Bootstrap</li>
-            <li>• TailwindCSS</li>
+            <li>• React.js</li>
+            <li>• Next.js</li>
+            <li>• Express.js</li>
+            <li>• Node.js</li>
+            <li>• Tailwind CSS</li>
+            <li>• Prisma</li>
+            <li>• TurboRepo</li>
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Backend-End</h2>
+          <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Dev Tools</h2>
           <ul className="text-xs sm:text-sm text-white">
-            <li>• NodeJs</li>
-            <li>• ExpressJs</li>
-            <li>• REST API</li>
+            <li>• Visual Studio Code</li>
+            <li>• Windows</li>
+            <li>• Linux</li>
+            <li>• Postman</li>
+            <li>• Rest APIs</li>
+            <li>• Recoil</li>
           </ul>
         </div>
         <div className="p-6 bg-black rounded-lg shadow-md">
           <h2 className="text-sm sm:text-lg font-semibold mb-4 text-white">Databases</h2>
           <ul className="text-xs sm:text-sm text-white">
-            <li>• Prisma</li>
             <li>• MongoDB</li>
-            <li>• Firebase</li>
             <li>• MySQL</li>
+            <li>• PostgreSQL</li>
           </ul>
         </div>
       </div>

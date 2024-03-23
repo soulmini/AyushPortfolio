@@ -3,9 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-
-
-function Projects () {
+function Projects() {
   return (
     <div className="max-w-5xl mx-auto px-8">
       <p className="text-sm sm:text-3xl font-bold text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-900 py-8">
@@ -15,30 +13,32 @@ function Projects () {
     </div>
   );
 }
+
 export const projects = [
   {
-    title: "Realtime Code Editor ",
-    description: "Implemented intuitive, responsive UI with room creation and user count display. Achieved 30% improvement in user engagement and 20% reduction in onboarding time. Optimized backend for scalability and reduced latency by 40%. Fostered dynamic coding environment and enhanced collaborative coding experiences by 35%.",
-    link: "link/to/realtime-code-editor",
+    title: "Realtime Code Editor",
+    description: "Real-time Code Editor a collaborative programming platform leveraging React.js, Node.js, Express.js and WebSockets. Seamlessly code together in real-time, share live updates, and communicate instantly. Elevate teamwork, problem-solving, and productivity. Experience the future of collaborative programming.",
+    link: "https://real-time-code-editor-two.vercel.app/",
+    githubLink: "https://github.com/soulmini/realTime_codeEditor",
+    liveLink: "https://real-time-code-editor-two.vercel.app/"
   },
   {
     title: "Chat GPT",
-    description: "Developed user-friendly chatbot interface, increasing engagement by 25%. Engineered scalable backend to manage high volumes of user interactions. Integrated frontend and backend for seamless communication. Demonstrated scalability and reliability with up to 1500 concurrent users.",
-    link: "link/to/chat-gpt",
+    description: "Built a personalized Chat GPT application using React.js, Node.js, Express.js, and Tailwind CSS, leveraging the OpenAI API key. This project enables real-time interaction with an AI-powered chatbot, showcasing proficiency in full-stack development and integration of advanced APIs.",
+    link: "https://your-live-link.com",
+    githubLink: "https://github.com/soulmini/client",
+    liveLink: "https://your-live-link.com"
   },
   {
     title: "Chat App",
-    description: "Developed intuitive frontend with SocketIO integration. Supported frontend with efficient server-side logic. Achieved seamless integration and flawless functionality. Ensured smooth and reliable chat application experience through thorough testing and debugging.",
-    link: "link/to/chat-appp",
+    description: "Crafted a feature-rich chat application utilizing React.js, Node.js, Express.js, Tailwind CSS, and Socket.IO for real-time communication. This project showcases expertise in building responsive user interfaces and implementing WebSocket technology for seamless, instant messaging experiences.",
+    link: "https://your-live-link.com",
+    githubLink: "https://github.com/soulmini/Chat_APP",
+    liveLink: "https://your-live-link.com"
   },
 ];
 
-
-
-
 export default Projects;
-
-
 export const HoverEffect = ({
   items,
   className,
@@ -47,6 +47,8 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    githubLink: string;
+    liveLink: string;
   }[];
   className?: string;
 }) => {
@@ -55,22 +57,24 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
         className
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+        <a
+          href={item.link}  // Use anchor element instead of Link component
+          key={item.link}
+          className="relative group block p-2 h-full w-full"
+          target="_blank"  // Open link in new tab
+          rel="noopener noreferrer"  // Recommended for security
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -84,22 +88,27 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
+          <Card githubLink={item.githubLink} liveLink={item.liveLink}>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </Link>
+        </a>
       ))}
     </div>
   );
 };
 
+
 export const Card = ({
   className,
   children,
+  githubLink,
+  liveLink,
 }: {
   className?: string;
   children: React.ReactNode;
+  githubLink?: string;
+  liveLink?: string;
 }) => {
   return (
     <div
@@ -110,13 +119,33 @@ export const Card = ({
     >
       <div className="relative z-50">
         <div className="p-4">{children}</div>
-        <h1 className="absolute bottom-2 right-2 text-gray-600 dark:text-gray-300 transition-opacity opacity-0 group-hover:opacity-100">
-          Github Link
-        </h1>
+        <div className="absolute top-2 right-2">
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 transition-opacity opacity-0 group-hover:opacity-100 block hover:underline mb-1"
+            >
+              Github
+            </a>
+          )}
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 transition-opacity opacity-0 group-hover:opacity-100 block hover:underline"
+            >
+              Live
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -125,11 +154,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4 border-b pb-2", className)}>
       {children}
     </h4>
   );
 };
+
 export const CardDescription = ({
   className,
   children,
@@ -140,7 +170,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
