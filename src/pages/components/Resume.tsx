@@ -7,7 +7,7 @@ function Resume() {
   };
 
   return (
-    <div className="flex justify-center ">
+    <div  className="flex justify-center " id = "resume">
       <button
         className="bg-white text-black py-2 px-4 rounded-lg shadow hover:bg-gray-200 transition-colors duration-300"
         onClick={handleDownload}

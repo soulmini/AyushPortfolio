@@ -14,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-8 py-12 text-white">
+    <div className="max-w-5xl mx-auto px-8 py-12 text-white" id = "contact">
       <p className="text-3xl font-bold text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-900 py-8">
         Contact
       </p>
