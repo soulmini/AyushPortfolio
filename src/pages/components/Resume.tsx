@@ -7,9 +7,9 @@ function Resume() {
   };
 
   return (
-    <div  className="flex justify-center " id = "resume">
+    <div  className="flex bg-black justify-center " id = "resume">
       <button
-        className="bg-white text-black py-2 px-4 rounded-lg shadow hover:bg-gray-200 transition-colors duration-300"
+        className="bg-white bg-opacity-75 hover:bg-opacity-100 text-black font-medium font-sanc py-2 px-4 rounded-lg shadow hover:bg-gray-200 transition-colors duration-300"
         onClick={handleDownload}
       >
         Download Resume

@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="max-w-5xl mx-auto px-8 py-8 text-white" id = "about">
-      <p className="text-sm sm:text-3xl font-bold text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-900 py-8">
+    <div className="bg-black max-w-5xl mx-auto px-8 py-8 text-white" id = "about">
+      <p className="text-3xl sm:text-3xl font-bold text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-900 py-8">
         Experience & Education
       </p>
 
