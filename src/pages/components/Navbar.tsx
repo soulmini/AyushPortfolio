@@ -40,7 +40,7 @@ function Navbar() {
         <div className="cursor-pointer text-xl" onClick={() => {
           res_bar.current.classList.toggle('hidden');
         }}>
-          <img src={menu} alt="menu" />
+         Menu
         </div>
       </div>
       <div id='res_bar' className='hidden z-10 text-center sm:hidden' ref={res_bar}>
