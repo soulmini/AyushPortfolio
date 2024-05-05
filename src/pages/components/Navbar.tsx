@@ -13,22 +13,22 @@ function Navbar() {
         </h1>
         <div className="flex items-center space-x-6">
           <Link href="#resume">
-            <span className="text-white font-semibold hover:text-gray-400 transition duration-300">
+            <span className="text-white font-semibold hover:border-b border-dashed transition duration-300">
               Resume
             </span>
           </Link>
           <Link href="#about">
-            <span className="text-white font-semibold hover:text-gray-400 transition duration-300">
+            <span className="text-white font-semibold hover:border-b border-dashed transition duration-300">
               About
             </span>
           </Link>
           <Link href="#skills">
-            <span className="text-white font-semibold hover:text-gray-400 transition duration-300">
+            <span className="text-white font-semibold  hover:border-b border-dashed transition duration-300">
               Skills
             </span>
           </Link>
           <Link href="#contact">
-            <span className="text-white font-semibold  hover:text-gray-400 transition duration-300">
+            <span className="text-white font-semibold   hover:border-b border-dashed transition duration-300">
               Contact
             </span>
           </Link>
