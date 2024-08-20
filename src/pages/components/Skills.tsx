@@ -9,7 +9,7 @@ const Skills = () => {
 
       <div className="flex flex-wrap justify-center gap-6">
         <div className="p-6 bg-black rounded-lg shadow-md">
-          <h2 className="text-lg sm:text-lg border-b-2 border-dashed w-fit font-semibold mb-4 text-white">Languages</h2>
+          <h2 className="text-md sm:text-lg border-b-2 border-dashed w-fit font-semibold mb-4 text-white">Languages</h2>
           <ul className="text-sm sm:text-sm text-white">
             <li>• C++</li>
             <li>• C</li>

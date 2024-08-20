@@ -16,7 +16,7 @@ function About() {
         <div className="mb-8">
           <h3 className="text-xl font-semibold">Backend Engineer Intern</h3>
           <p>Hoverin AuroSpace</p>
-          <p>June 2023 - August 2023</p>
+          <p>Jan 2024 - June 2024</p>
           <p>
             As a Backend Engineer Intern at Hoverin AuroSpace, I worked closely
             with the development team to build and maintain backend systems.
@@ -46,9 +46,8 @@ function About() {
 
         <div className="mb-8">
           <h3 className="text-xl font-semibold">
-            Bachelor of Science in Computer Science
+          Dr. Bhim Rao Ambedkar University, Agra
           </h3>
-          <p>Dr. Bhim Rao Ambedkar University, Agra</p>
           <p>Graduation Date: June 2024</p>
           <p>Degree: Computer Science And Engineering</p>
           <p>Courses: OOPS, DBMS, CN, Software Engineering, OS, Data Structure, Algorithms</p>

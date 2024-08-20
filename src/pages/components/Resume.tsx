@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
   const handleDownload = () => {
     // Add functionality to trigger the download
-    window.location.href = "https://drive.google.com/file/d/1o9GoZrXjeXHOYFogjqw139JZl_vQzrBv/view?usp=drivesdk"; // Replace with your actual resume link
+    window.location.href = "https://drive.google.com/file/d/1YrXdItrzwQis3cdNZyXWKYqIZOu6JXm5/view?usp=drivesdk"; // Replace with your actual resume link
   };
 
   return (
